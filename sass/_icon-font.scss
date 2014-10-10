@@ -1,0 +1,240 @@
+@font-face
+{
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'symbols';
+
+	src: url( '../icon-font/symbols.eot?v4kp9' );
+	src: url( '../icon-font/symbols.eot?#iefixv4kp9' ) format( 'embedded-opentype' ),
+	url( '../icon-font/symbols.woff?v4kp9' ) format( 'woff' ),
+	url( '../icon-font/symbols.ttf?v4kp9' ) format( 'truetype' ),
+	url( '../icon-font/symbols.svg?v4kp9#symbols' ) format( 'svg' );
+}
+
+%icon-font
+{
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'symbols';
+	line-height: 1;
+	text-transform: none;
+
+	speak: none;
+
+	// Better Font Rendering
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+
+%icon-chevron-left
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e001"
+	}
+}
+
+%icon-chevron-right
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e002"
+	}
+}
+
+%icon-data-file-outline
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e003"
+	}
+}
+
+%icon-download-outline
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e004"
+	}
+}
+
+%icon-download-solid 
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e005"
+	}
+}
+
+%icon-line-graph-up-outline
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e006"
+	}
+}
+
+%icon-pause-outline
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e007"
+	}
+}
+
+%icon-pause-solid
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e008"
+	}
+}
+
+%icon-play-outline
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e009"
+	}
+}
+
+%icon-play-solid
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e00a"
+	}
+}
+
+%icon-plus
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e00b"
+	}
+}
+
+%icon-power-outline
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e00c"
+	}
+}
+
+%icon-profile-outline
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e00d"
+	}
+}
+
+%icon-question-outline
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e00e"
+	}
+}
+
+%icon-refresh-outline
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e00f"
+	}
+}
+
+%icon-stop-outline
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e010"
+	}
+}
+
+%icon-stop-solid
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e011"
+	}
+}
+
+%icon-trash-can-outline
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e012"
+	}
+}
+
+%icon-trash-can-solid
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e013"
+	}
+}
+
+%icon-upload-outline
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e014"
+	}
+}
+
+%icon-upload-solid
+{
+	@extend %icon-font;
+
+	&:before
+	{
+		content: "\e015"
+	}
+}
