@@ -1,9 +1,10 @@
-var gulp                = require( 'gulp' );
+var gulp           = require( 'gulp' );
+var gutil          = require( 'gulp-util' );
 
-var rename              = require( 'gulp-rename' );
-var sketch              = require( 'gulp-sketch' );
-var iconfont            = require( 'gulp-iconfont' );
-var consolidate         = require( 'gulp-consolidate');
+var rename         = require( 'gulp-rename' );
+var sketch         = require( 'gulp-sketch' );
+var iconfont       = require( 'gulp-iconfont' );
+var consolidate    = require( 'gulp-consolidate');
 
 
 // Configuration:
@@ -16,6 +17,8 @@ var ICON_FONT_SCSS_FILENAME = '_icon-font'
 var fontName = 'symbols';
 
 
+
+// Error handler.
 
 function handleError( err )
 {
@@ -34,7 +37,9 @@ gulp.task( 'symbols', function(  )
         export: 'artboards',
         formats: 'svg'
     } ) )
+    .on( 'error', handleError );
     .pipe( iconfont( { fontName: fontName } ) )
+    .on( 'error', handleError );
     .on('codepoints', function( codepoints )
     {
         var options =
